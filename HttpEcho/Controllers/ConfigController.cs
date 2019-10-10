@@ -6,12 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HttpEcho.Controllers
 {
-    [Area("Intro")]
-    public class HomeController : Controller
+    public class ConfigController : Controller
     {
         public async Task<IActionResult> Index()
         {
-            return Ok("Welcome!");
+            return Content("Config Index!");
         }
     }
 }

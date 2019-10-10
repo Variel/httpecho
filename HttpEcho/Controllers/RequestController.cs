@@ -6,12 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HttpEcho.Controllers
 {
-    [Area("Intro")]
-    public class HomeController : Controller
+    public class RequestController : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Incoming(string url)
         {
-            return Ok("Welcome!");
+            return Content(url);
         }
     }
 }
