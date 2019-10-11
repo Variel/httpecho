@@ -11,7 +11,7 @@ namespace HttpEcho.Controllers
     {
         public async Task<IActionResult> Index()
         {
-            return Ok("Welcome!");
+            return View();
         }
     }
 }
