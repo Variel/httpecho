@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HttpEcho.Controllers
+namespace HttpEcho.Areas.Intro.Controllers
 {
     [Area("Intro")]
     public class HomeController : Controller

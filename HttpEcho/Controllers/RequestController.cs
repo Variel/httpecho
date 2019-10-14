@@ -8,9 +8,9 @@ namespace HttpEcho.Controllers
 {
     public class RequestController : Controller
     {
-        public async Task<IActionResult> Incoming(string url)
+        public async Task<IActionResult> Incoming(string url, string userId, string endpoint)
         {
-            return Content(url);
+            return Content($"{userId}/{endpoint}/{url}");
         }
     }
 }
